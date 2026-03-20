@@ -1,8 +1,8 @@
 /************************************************************************************************************
 *
-*    1) Bubble Sort (básico) (0.5 valor)
-*       Implemente void bubbleSort(int v[], int n) para ordenar em ordem crescente. Use troca com variável
-*       temporária (swap). (Dica: cuidado com os limites do laço interno para não acessar v[j+1]fora do vetor.)
+*    6) Selection Sort (implementação base) (0.5 valor)
+*       Implemente void selectionSort(int *V, int n) conforme a ideia de “selecionar o menor e colocar na
+*       posição correta”.
 *
 *************************************************************************************************************/
 
@@ -16,19 +16,24 @@ void swap(int *a, int *b)
     *b = aux;
 }
 
-void bubbleSort(int v[], int n)
+void selectionSort(int *V, int n)
 {
-    int i,j;
+    int i, j, menor;
 
-    printf("\n\n** Execução do Bubble Sort **");
+    printf("\n\n** Execução do Selection Sort **");
 
     for(i = 0; i < n-1; i++)
     {
-        for(j = 0; j < n-1; j++)
+        menor = i;
+
+        for(j = i+1; j < n; j++)
         {
-            if(v[j] > v[j+1])
-                swap(&v[j], &v[j+1]);
+            if(V[j] < V[menor])
+                menor = j;
         }
+
+        if (i != menor)
+            swap(&V[i], &V[menor]);
     }
 }
 
@@ -54,7 +59,7 @@ int main()
     printf("Valores antes da ordenação:\n");
     print(v, 9);
 
-    bubbleSort(v, 9);
+    selectionSort(v, 9);
 
     printf("\n\nValores após a ordenação:\n");
     print(v, 9);

@@ -1,8 +1,10 @@
 /************************************************************************************************************
 *
-*    1) Bubble Sort (básico) (0.5 valor)
-*       Implemente void bubbleSort(int v[], int n) para ordenar em ordem crescente. Use troca com variável
-*       temporária (swap). (Dica: cuidado com os limites do laço interno para não acessar v[j+1]fora do vetor.)
+*    2) Bubble Sort instrumentado (comparações e trocas) (0.5 valor)
+*       Implemente Bubble Sort com:
+*        • comparacoes++ a cada comparação
+*        • trocas++ a cada swap
+*       Imprima comparacoes e trocas ao final.
 *
 *************************************************************************************************************/
 
@@ -19,6 +21,8 @@ void swap(int *a, int *b)
 void bubbleSort(int v[], int n)
 {
     int i,j;
+    int comparacoes = 0;
+    int trocas = 0;
 
     printf("\n\n** Execução do Bubble Sort **");
 
@@ -26,10 +30,17 @@ void bubbleSort(int v[], int n)
     {
         for(j = 0; j < n-1; j++)
         {
+            comparacoes++;
             if(v[j] > v[j+1])
+            {
                 swap(&v[j], &v[j+1]);
+                trocas++;
+            }
         }
     }
+
+    printf("\nQuantidade de comparações: %d", comparacoes);
+    printf("\nQuantidade de trocas: %d", trocas);
 }
 
 void print(int v[], int n)
