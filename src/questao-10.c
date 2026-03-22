@@ -20,8 +20,6 @@ void selectionSortOrdem(int *V, int n, int ordem)
 {
     int i, j, menor, maior;
 
-    printf("\n\n** Execução do Selection Sort **");
-
     for(i = 0; i < n-1; i++)
     {
         menor = i;

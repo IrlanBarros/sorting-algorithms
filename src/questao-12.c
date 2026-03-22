@@ -1,20 +1,11 @@
 /************************************************************************************************************
 *
-*    7) Traçado (passo a passo) — Selection Sort (0.5 valor)
-*       Para o vetor [64, 25, 12, 22, 11], escreva o estado do vetor ao final de cada iteração do laço externo (i = 0, 1, 2,
-*       3).
+*    12) Traçado (passo a passo) — Insertion Sort (0.5 valor)
+*       Para o vetor [5, 3, 4, 1, 2], escreva o vetor ao final de cada iteração do for (i=1; i<n; i++).
 *
 *************************************************************************************************************/
 
 #include <stdio.h>
-
-void swap(int *a, int *b)
-{
-    int aux = *a;
-
-    *a = *b;
-    *b = aux;
-}
 
 void print(int v[], int n)
 {
@@ -31,38 +22,37 @@ void print(int v[], int n)
     printf("]\n");
 }
 
-void selectionSort(int *V, int n)
+void insertionSort(int *V, int n) 
 {
-    int i, j, menor;
+    int i, j, chave; 
 
-    printf("\n\n** Execução do Selection Sort **");
-
-    for(i = 0; i < n-1; i++)
+    for (i = 1; i < n; i++) 
     {
-        menor = i;
+        chave = V[i];
+        j = i;
 
-        for(j = i+1; j < n; j++)
+        while (j > 0 && chave < V[j - 1]) 
         {
-            if(V[j] < V[menor])
-                menor = j;
+            V[j] = V[j - 1]; 
+            j--; 
         }
-
-        if (i != menor)
-            swap(&V[i], &V[menor]);
+        
+        V[j] = chave;
 
         printf("\nVetor após a passada i = %d: \n", i);
-        print(V, n);
+        print(V, 5);
     }
 }
 
 int main()
 {
-    int v[] = {64, 25, 12, 22, 11};
+    int v[] = {5, 3, 4, 1, 2};
 
     printf("Valores antes da ordenação:\n");
     print(v, 5);
 
-    selectionSort(v, 5);
+    printf("\n** EXECUÇÃO DO INSERTION SORT **");
+    insertionSort(v, 5);
 
     printf("\n\nValores após a ordenação:\n");
     print(v, 5);

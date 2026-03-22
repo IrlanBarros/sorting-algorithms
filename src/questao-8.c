@@ -25,8 +25,6 @@ void selectionSort(int *V, int n)
     int comparacoes = 0;
     int trocas = 0;
 
-    printf("\n\n** Execução do Selection Sort **");
-
     for(i = 0; i < n-1; i++)
     {
         menor = i;
@@ -78,8 +76,13 @@ int main()
 
     printf("\n\n*** SELECTION SORT ORDENANDO OS TRÊS VETORES ***\n");
 
+    printf("\nVetor ordenado:");
     selectionSort(vetorOrdenado, 20);
+    
+    printf("\n\nVetor reverso:");
     selectionSort(vetorReverso, 20);
+
+    printf("\n\nVetor aleatório:");
     selectionSort(vetorAleatorio, 20);
 
     printf("\n\nVetores ordenado, reverso e aleatório, respectivamente, após as ordenações:\n");
