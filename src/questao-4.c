@@ -50,8 +50,6 @@ void bubbleSortOptimizado(int v[], int n)
     int trocas = 0;
     int houveTroca = 1;
 
-    printf("\n\n** Execução do Bubble Sort Otimizado **");
-
     for(i = 0; i < n-1; i++)
     {
         houveTroca = 0; 
@@ -102,8 +100,13 @@ int main()
 
     printf("\n\n*** BUBBLE SORT BÁSICO ORDENANDO OS TRÊS VETORES ***\n");
 
+    printf("\nVetor ordenado:");
     bubbleSort(vetorOrdenado, 20);
+    
+    printf("\n\nVetor reverso:");
     bubbleSort(vetorReverso, 20);
+
+    printf("\n\nVetor aleatório:");
     bubbleSort(vetorAleatorio, 20);
 
     printf("\n\nVetores ordenado, reverso e aleatório, respectivamente, após as ordenações:\n");
@@ -117,9 +120,14 @@ int main()
 
     printf("\n\n*** BUBBLE SORT OTIMIZADO ORDENANDO OS TRÊS VETORES ***\n");
 
-    bubbleSortOptimizado(vetorOrdenado1, 20);
-    bubbleSortOptimizado(vetorReverso1, 20);
-    bubbleSortOptimizado(vetorAleatorio1, 20);
+    printf("\nVetor ordenado:");
+    bubbleSortOptimizado(vetorOrdenado, 20);
+    
+    printf("\n\nVetor reverso:");
+    bubbleSortOptimizado(vetorReverso, 20);
+
+    printf("\n\nVetor aleatório:");
+    bubbleSortOptimizado(vetorAleatorio, 20);
 
     printf("\n\nVetores ordenado, reverso e aleatório, respectivamente, após as ordenações:\n");
     print(vetorOrdenado1, 20);
