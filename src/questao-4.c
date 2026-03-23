@@ -119,13 +119,13 @@ int main()
     printf("\n\n*** BUBBLE SORT OTIMIZADO ORDENANDO OS TRÊS VETORES ***\n");
 
     printf("\nVetor ordenado:");
-    bubbleSortOptimizado(vetorOrdenado, 20);
+    bubbleSortOptimizado(vetorOrdenado1, 20);
     
     printf("\n\nVetor reverso:");
-    bubbleSortOptimizado(vetorReverso, 20);
+    bubbleSortOptimizado(vetorReverso1, 20);
 
     printf("\n\nVetor aleatório:");
-    bubbleSortOptimizado(vetorAleatorio, 20);
+    bubbleSortOptimizado(vetorAleatorio1, 20);
 
     printf("\n\nVetores ordenado, reverso e aleatório, respectivamente, após as ordenações:\n");
     print(vetorOrdenado1, 20);
