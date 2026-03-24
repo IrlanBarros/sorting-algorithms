@@ -95,4 +95,6 @@ int main()
     // nos vetores. E o número de iterações do loop interno sempre vai decrementando a cada passada do loop externo graças ao
     // trecho "j = i+1", o que resulta em um número de comparações sempre igual a comparações = n(n - 1) / 2. E no selection
     // não há otimizações (igual o early stop do bubble sort) que possam mudar o número de comparações. 
+
+    return 0;
 }

@@ -85,4 +85,6 @@ int main()
     print(vetorOrdenado, 20);
     print(vetorReverso, 20);
     print(vetorAleatorio, 20);
+
+    return 0;
 }

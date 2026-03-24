@@ -56,4 +56,6 @@ int main()
 
     printf("\n\nValores após a ordenação:\n");
     print(v, 12);
+
+    return 0;
 }

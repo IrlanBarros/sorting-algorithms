@@ -131,4 +131,6 @@ int main()
     print(vetorOrdenado1, 20);
     print(vetorReverso1, 20);
     print(vetorAleatorio1, 20);
+
+    return 0;
 }

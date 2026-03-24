@@ -63,4 +63,6 @@ int main()
 
     printf("\n\nValores após a ordenação:\n");
     print(v, 9);
+
+    return 0;
 }

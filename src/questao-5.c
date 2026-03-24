@@ -78,9 +78,11 @@ int main()
     printf("\n\nValores após a ordenação:\n");
     print(v1, 12);
 
-    int v2[0];
+    int v2[] = {};
     int v3[] = {1};
 
     bubbleSortOrdem(v2, 0, 1);
     bubbleSortOrdem(v3, 1, 1);
+
+    return 0;
 }

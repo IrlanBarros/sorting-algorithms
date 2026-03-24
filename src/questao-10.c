@@ -77,4 +77,6 @@ int main()
 
     printf("\n\nValores após a ordenação:\n");
     print(v1, 12);
+
+    return 0;
 }
