@@ -23,6 +23,8 @@ sorting-algorithms/
 │       ├── bubble-sort.c
 │       ├── selection-sort.c
 │       └── insertion-sort.c
+│   └── docs/
+│       ├── lista-01-ordenacao.pdf
 ```
 
 ## 📋 Lista de Questões e Arquivos
