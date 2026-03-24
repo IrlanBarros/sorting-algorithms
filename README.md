@@ -14,6 +14,8 @@ O repositório está organizado da seguinte forma:
 
 ```text
 sorting-algorithms/
+├── docs/
+│   ├── lista-01-ordenacao.pdf
 ├── src/
 │   ├── questao-1.c
 │   ├── questao-2.c
@@ -23,8 +25,6 @@ sorting-algorithms/
 │       ├── bubble-sort.c
 │       ├── selection-sort.c
 │       └── insertion-sort.c
-│   └── docs/
-│       ├── lista-01-ordenacao.pdf
 ```
 
 ## 📋 Lista de Questões e Arquivos
