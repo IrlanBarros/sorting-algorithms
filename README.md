@@ -30,18 +30,18 @@ Abaixo está o mapeamento de cada questão da lista para o seu respectivo arquiv
 
 | Questão | Descrição | Arquivo |
 | :--- | :--- | :--- |
-| **1** | [cite_start]Bubble Sort (básico) [cite: 13] | `questao-1.c` |
-| **2** | [cite_start]Bubble Sort instrumentado (comparações e trocas) [cite: 16] | `questao-2.c` |
-| **3** | [cite_start]Bubble Sort com early stop (flag) [cite: 20] | `questao-3.c` |
-| **4** | [cite_start]Comparação experimental: sem otimização vs early stop [cite: 23] | `questao-4.c` |
-| **5** | [cite_start]Bubble Sort com parâmetro de ordem [cite: 29] | `questao-5.c` |
-| **6** | [cite_start]Selection Sort (implementação base) [cite: 34] | `questao-6.c` |
-| **7** | [cite_start]Traçado (passo a passo) Selection Sort [cite: 36] | `questao-7.c` |
-| **8** | [cite_start]Métricas no Selection Sort [cite: 38] | `questao-8.c` |
-| **10** | [cite_start]Selection Sort crescente/decrescente [cite: 49] | `questao-10.c` |
-| **11** | [cite_start]Insertion Sort (implementação base) [cite: 52] | `questao-11.c` |
-| **12** | [cite_start]Traçado (passo a passo) Insertion Sort [cite: 57] | `questao-12.c` |
-| **13** | [cite_start]Insertion Sort instrumentado (comparações e movimentações) [cite: 59] | `questao-13.c` |
+| **1** | Bubble Sort (básico) | `questao-1.c` |
+| **2** | Bubble Sort instrumentado (comparações e trocas) | `questao-2.c` |
+| **3** | Bubble Sort com early stop (flag) | `questao-3.c` |
+| **4** | Comparação experimental: sem otimização vs early stop | `questao-4.c` |
+| **5** | Bubble Sort com parâmetro de ordem | `questao-5.c` |
+| **6** | Selection Sort (implementação base) | `questao-6.c` |
+| **7** | Traçado (passo a passo) Selection Sort | `questao-7.c` |
+| **8** | Métricas no Selection Sort [cite: 38] | `questao-8.c` |
+| **10** | Selection Sort crescente/decrescente | `questao-10.c` |
+| **11** | Insertion Sort (implementação base) | `questao-11.c` |
+| **12** | Traçado (passo a passo) Insertion Sort | `questao-12.c` |
+| **13** | Insertion Sort instrumentado (comparações e movimentações) | `questao-13.c` |
 
 > **Nota:** As questões 4, 9 e 13 exigem a gravação de vídeos explicativos. Os arquivos `.c` correspondentes a essas questões neste repositório contêm os códigos utilizados para gerar os dados empíricos apresentados nos vídeos. A questão 9 não necessitou de um arquivo .c
 
@@ -73,4 +73,4 @@ q1.exe
 
 ## 🎓 Sobre a Disciplina
 
-[cite_start]Este repositório foi desenvolvido para armazenar as resoluções da 1ª Lista de Atividades [cite: 6] [cite_start]da disciplina de **Laboratório de Algoritmos e Estrutura de Dados** [cite: 5] [cite_start]da **Universidade Federal do Cariri (UFCA)**[cite: 2, 3].
+Este repositório foi desenvolvido para armazenar as resoluções da 1ª Lista de Atividades da disciplina de **Laboratório de Algoritmos e Estrutura de Dados** da **Universidade Federal do Cariri (UFCA)**.
