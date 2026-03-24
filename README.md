@@ -8,6 +8,7 @@ O foco destas atividades é a implementação, instrumentação e otimização d
 
 O repositório está organizado da seguinte forma:
 
+* `docs/lista-01-ordenacao.pdf`: Documento original com as instruções e as 13 questões da atividade.
 * `src/`: Contém os arquivos `.c` com as resoluções das 13 questões propostas na lista.
 * `src/questoes-slides/`: Contém os desafios propostos durante os slides das aulas teóricas.
 
